@@ -1,0 +1,9 @@
+title: Meu Site
+description: Um site simples hospedado no GitHub Pages
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+paginate: 5
