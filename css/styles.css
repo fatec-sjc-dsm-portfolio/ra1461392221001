@@ -1,0 +1,147 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #040F16; /* Cor de fundo */
+    color: white; /* Cor principal do texto */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    position: relative;
+    height: 400px;
+}
+
+.header-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('assets/galaxy.gif') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arcade-img {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+h1 {
+    font-family: 'Pixel', sans-serif; /* Fonte pixelizada */
+    font-size: 3.5em;
+    color: #CCA43B;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+/* Navegação */
+nav {
+    background-color: #CCA43B; /* Cor de fundo */
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: #040F16; /* Cor de texto */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #F7567C; /* Cor ao passar o mouse */
+}
+
+/* Seções */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #829298; /* Cor de fundo da seção */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    font-family: 'Pixel', sans-serif; /* Fonte pixelizada */
+    font-size: 2em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/* Lista */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Contato */
+.info {
+    margin-bottom: 15px;
+}
+
+.info span {
+    font-weight: bold;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: #040F16; /* Cor de fundo do footer */
+    color: #F7567C; /* Cor do texto no footer */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-weight:bold
+}
+
+.foto-perfil {
+    width: 320px;         /* Ajuste o tamanho para o desejado */
+    height: 320px;        /* A altura deve ser igual à largura para manter a forma redonda */
+    border-radius: 50%;   /* Torna a imagem redonda */
+    object-fit: cover;    /* Garante que a imagem se ajuste bem dentro do círculo */
+    margin: 0 auto;       /* Centraliza a imagem horizontalmente */
+    display: block;       /* Faz com que a imagem seja tratada como um bloco, facilitando a centralização */
+    margin-bottom: 20px;  /* Espaço abaixo da imagem */
+}
