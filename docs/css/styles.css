@@ -13,6 +13,11 @@ body {
     line-height: 1.6;
 }
 
+/* Ajuste para evitar overflow horizontal */
+body {
+    overflow-x: hidden;
+}
+
 /* Header */
 header {
     position: relative;
@@ -106,6 +111,16 @@ img {
     margin-bottom: 20px;
 }
 
+/* Imagens responsivas */
+img, .responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Contato */
 .info {
     margin-bottom: 15px;
@@ -159,4 +174,94 @@ footer {
 
 .github-button:hover {
     background-color: #992943 /* Vermelho mais escuro no hover */
+}
+
+/* --- RESPONSIVIDADE --- */
+
+/* Header responsivo */
+@media (max-width: 900px) {
+    header {
+        height: 250px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .foto-perfil {
+        width: 180px;
+        height: 180px;
+    }
+    .container {
+        padding: 10px;
+    }
+}
+
+/* Navegação responsiva */
+@media (max-width: 700px) {
+    nav {
+        padding: 10px 0;
+    }
+    nav a {
+        display: block;
+        margin: 10px 0;
+        font-size: 1.1em;
+    }
+}
+
+/* Ajuste geral para dispositivos móveis */
+@media (max-width: 600px) {
+    .container {
+        width: 98%;
+        margin: 15px auto;
+        padding: 8px;
+    }
+    h2, h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    .foto-perfil {
+        width: 120px;
+        height: 120px;
+    }
+    img {
+        margin-bottom: 10px;
+    }
+    .github-button {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        font-size: 1em;
+    }
+    footer {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+}
+
+/* Ajuste para listas longas */
+@media (max-width: 500px) {
+    ul li {
+        font-size: 1em;
+        margin-bottom: 6px;
+    }
+    .container {
+        padding: 4px;
+    }
+}
+
+/* Ajuste para header e navegação em telas muito pequenas */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.1em;
+    }
+    nav a {
+        font-size: 1em;
+    }
+}
+
+/* Melhorando o espaçamento dos botões em telas pequenas */
+@media (max-width: 400px) {
+    .github-button {
+        font-size: 0.9em;
+        padding: 10px 0;
+    }
 }
